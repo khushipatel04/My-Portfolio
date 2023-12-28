@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khushi Patel</title>
+
+    <!-------------- Title Bar Icon -------------->
+    <link rel="icon" href="/Images/kp1.jpeg" type="image/x-icon">
+
+    <!-------------- Fonts -------------->
+    <link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+
+    <!-------------- Bootstrap CSS -------------->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-------------- Scroll SCSS -------------->
+    <link rel="stylesheet" href="/CSS/scroll.css">
+
+    <!-------------- Scroll Animation -------------->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" rel="stylesheet">
+
+    <!-------------- Custom CSS -------------->
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+
+<body>
+
+    <!-------------- Navbar -------------->
+    <header>
+        <nav class="navbar navbar-expand-md bg-1 fixed-top py-3 px-5 d-none d-md-flex nav-blur-12">
+            <div class=" container-fluid">
+                <a class="navbar-brand" href="#home"><img src="/Images/kp1.jpeg" alt="Logo" width="50"></a>
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="#"><img src="/Images/kp1.jpeg" alt="Logo" width="50"></a>
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item mx-4">
+                                <a class="nav-link custom-nav-link" href="#about">About</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link custom-nav-link" href="#portfolio">Portfolio</a>
+                            </li>
+                            <li class="nav-item mx-4">
+                                <a class="nav-link custom-nav-link" href="#contact">Contact</a>
+                            </li>
+                            <li class="nav-item ms-4">
+                                <a class="btn btn-outline-light border-2" href="/Khushi-resume.pdf" target="_blank">Resume</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-------------- Navbar - Mobile View -------------->
+        <div class="mob-navbar-anime mob-navbar-anime-remove"></div>
+        <nav class="navbar fixed-top py-3 px-4 d-flex d-md-none mob-navbar nav-blur-12">
+            <div class="container-fluid">
+                <a class="navbar-brand navbar-toggler-logo" href="#home"><img src="/Images/kp1.jpeg" alt="Logo"
+                        width="50"></a>
+                <button class="navbar-toggler border-0 hamburger-lines navbar-toggler-icon" type="button">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </button>
+            </div>
+        </nav>
+        <div class="mob-navbar-menu mob-navbar-menu-remove">
+            <div class="row text-center mb-2">
+                <a class="navbar-toggler-link" href="#home">Home</a>
+                <a class="navbar-toggler-link" href="#about">About</a>
+                <a class="navbar-toggler-link" href="#portfolio">Portfolio</a>
+                <a class="navbar-toggler-link" href="#contact">Contact</a>
+                <a class="navbar-toggler-link" href="/Khushi-resume.pdf" target="_blank">Resume</a>
+            </div>
+        </div>
+    </header>
+
+
+    <main class="main main-section-toggle-remove">
+
+        <!-------------- Home page -------------->
+        <div class="bg-1">
+            <section id="home"
+                class="container-md d-flex align-items-center justify-content-center position-relative visibility-hidden animate"
+                data-animate="rubberBand" data-duration="1s" data-delay="0.2s" data-offset="100" data-iteration="1">
+                <div class="home-inner text-center">
+                    <h1>Hey, I'm Khushi Patel</h1>
+                    <h4>An Android Developer in training.</h4>
+                </div>
+                <div class="scroll-arrow">
+                    <a href="#about" class="d-block" style="width: 50px; height: 100px;">
+                        <div class="scroll-div">
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                            <div class="chevron"></div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-------------- Social Links -------------->
+            <div class="home-socials d-md-block d-none visibility-hidden animate" data-animate="slideInLeft"
+                data-duration="1s" data-delay="0" data-offset="100" data-iteration="1">
+                <div class="home-social">
+                    <a href="https://github.com/khushipatel04" class="home-social-icon-link" rel="noreferrer"
+                        target="_blank">
+                        <img src="/Images/s-github.svg" alt="JaiminMalaviya Github Profile"
+                            class="home-social-icon-static" width="32">
+                        <img src="/Images/s-github.gif" alt="JaiminMalaviya Github Profile" class="home-social-icon"
+                            width="32">
+                    </a>
+                </div>
+                <div class="home-social">
+                    <a href="www.linkedin.com/in/khushi-patel-6218441b3" class="home-social-icon-link"
+                        rel="noreferrer" target="_blank">
+                        <img src="/Images/s-linkedin.svg" alt="JaiminMalaviya linkedin Profile"
+                            class="home-social-icon-static" width="34" style="left: 0;">
+                        <img src="/Images/s-linkedin.gif" alt="JaiminMalaviya linkedin Profile" class="home-social-icon"
+                            width="34">
+                    </a>
+                </div>
+               
+                <div class="home-social">
+                    <a href="https://www.instagram.com/khushipatel_0413/" class="home-social-icon-link" rel="noreferrer"
+                        target="_blank">
+                        <img src="/Images/s-instagram.svg" alt="JaiminMalaviya Instagram Profile"
+                            class="home-social-icon-static" width="32">
+                        <img src="/Images/s-instagram.gif" alt="JaiminMalaviya Instagram Profile"
+                            class="home-social-icon" width="32">
+                    </a>
+                </div>
+                <div class="home-social">
+                    <a href="https://wa.me/916354313355" class="home-social-icon-link" rel="noreferrer" target="_blank">
+                        <img src="/Images/s-whatsapp.svg" alt="JaiminMalaviya Whatsapp Messenger"
+                            class="home-social-icon-static" width="30" style="left: 2px;">
+                        <img src="/Images/s-whatsapp.gif" alt="JaiminMalaviya Whatsapp Messenger"
+                            class="home-social-icon" width="30">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+
+        <!-------------- About page -------------->
+        <div class="bg-2">
+            <section id="about" class="container-md">
+                <div class="about-inner d-flex flex-column align-items-center">
+                    <div class="sketchy visibility-hidden  animate" data-animate="bounceIn" data-duration="1s"
+                        data-delay="0.2s" data-offset="100" data-iteration="1">About me</div>
+                    <div class="row my-5 justify-content-between about-cont">
+                        <p class=" col-md-6 col-sm-10 text-center text-md-start m-md-0 m-auto order-md-0 order-1
+                        visibility-hidden about-text animate" data-animate="fadeInLeftBig" data-duration="1s"
+                            data-delay="0.2s" data-offset="100" data-iteration="1">
+                            Hello! My name is
+                            <span>Khushi
+                                Patel</span>
+                            and I'm a<span> Full stack Android Developer</span> building the Front-end and Back-end of Application that leads to the success of the overall product. Check out some of my work in
+                            the <span> Portfolio </span> section. I'm open to <span>Job opportunities</span> where I can
+                            contribute, learn and grow. If you have a good opportunity that matches my skills and
+                            experience then don't hesitate to <span> Contact me.</span>
+                        </p>
+                        <div class="col-md-5 order-md-1 order-0 d-flex justify-content-center mb-md-0 mb-4 visibility-hidden animate"
+                            data-animate="fadeInRightBig" data-duration="1s" data-delay="0" data-offset="100"
+                            data-iteration="1">
+                            <img src="Images/face1.jpeg" alt="Avatar" class="img-avatar">
+                        </div>
+                    </div>
+
+                    <div class="skills-inner w-100 d-flex flex-column mb-5 align-items-center visibility-hidden animate"
+                        data-animate="fadeInUp" data-duration="1s" data-delay="0" data-offset="0" data-iteration="1">
+                        <div class="sketchy mt-5 ">My Skills</div>
+                        <div class="skills">
+                            <div class="skill">
+                                <h6 class="skill-name">Java Programming</h6>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">XML</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">HTML</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="90%" style="max-width:90%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">SQLite</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="60%" style="max-width:60%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">CSS</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="50%" style="max-width:50%"></div>
+                                </div>
+                            </div>
+                            <div class="skill">
+                                <div class="skill-name">Flutter</div>
+                                <div class="skill-bar">
+                                    <div class="skill-per" per="40%" style="max-width:40%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#portfolio"
+                        class="mt-5 d-flex align-items-center scroll-portfolio-link visibility-hidden  animate"
+                        data-animate="fadeIn" data-duration="1s" data-delay="0.2s" data-offset="100" data-iteration="1">
+                        <h3 class="m-0 me-3">Check out my Work</h3>
+                        <div class="center-scroll">
+                            <div class="round">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+
+        <!-------------- Portfolio page -------------->
+        <div class="bg-1">
+            <section id="portfolio" class="container-md">
+                <div class="portfolio-inner d-flex flex-column align-items-center m-auto">
+                    <div class="sketchy visibility-hidden animate" data-animate="bounceIn" data-duration="1s"
+                        data-delay="0.2s" data-offset="100" data-iteration="1">My Portfolio</div>
+
+                    <div class="row justify-content-center mt-4">
+                        <div class="col-lg-6 col-md-9 col-sm-10 col-12 p-lg-4 p-2">
+                            <div class="proj-item visibility-hidden animate" data-animate="fadeInLeft"
+                                data-duration="1s" data-delay="0.2s" data-offset="100" data-iteration="1">
+                                <div class="proj-img">
+                                    <img src="/Images/portfolio.jpeg" alt="">
+                                    <div class="proj-link row flex-column text-center">
+                                        <a href="https://github.com/jaiminmalaviya/Anime.css"
+                                            target="_blank"
+                                            class="col-auto py-2 px-4 my-2 border border-2 border-white">
+                                            View Source
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="https://anime-css.netlify.app" target="_blank"
+                                            class="col-auto py-2 px-4 my-2 border border-2 border-white">
+                                            Try It Live
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="proj-info p-3">
+                                    <h3>My Portfolio</h3>
+                                    <div class="proj-category">
+                                        <h6>Web Development</h6>
+                                    </div>
+                                    <div class="proj-lang">
+                                        <span>HTML</span>
+                                        <span>CSS</span>
+                                        <span>jQuery</span>
+                                        <span>PHP</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-9 col-sm-10 col-12 p-lg-4 p-2">
+                            <div class="proj-item visibility-hidden animate" data-animate="fadeInRight"
+                                data-duration="1s" data-delay="0.2s" data-offset="100" data-iteration="1">
+                                <div class="proj-img">
+                                    <img src="/Images/food.avif" alt="">
+                                    <div class="proj-link row flex-column text-center">
+                                        <a href="https://github.com/khushipatel04/GPG_Food_Court.git"
+                                            target="_blank"
+                                            class="col-auto py-2 px-4 my-2 border border-2 border-white">
+                                            View Source
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="/app-debug.apk" target="_blank"
+                                            class="col-auto py-2 px-4 my-2 border border-2 border-white">
+                                            Try It Live
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="proj-info p-3">
+                                    <h3>GPG Food Court</h3>
+                                    <div class="proj-category">
+                                        <h6>Android Application with Database</h6>
+                                    </div>
+                                    <div class="proj-lang">
+                                        <span>JAVA</span>
+                                        <span>XML</span>
+                                        <span>SQLite</span>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-9 col-sm-10 col-12 p-lg-4 p-2">
+                            <div class="proj-item visibility-hidden animate" data-animate="fadeInLeft"
+                                data-duration="1s" data-delay="0.2s" data-offset="100" data-iteration="1">
+                                <div class="proj-img">
+                                    <img src="/Images/reminder.jpeg" alt="">
+                                    <div class="proj-link row flex-column text-center">
+                                        <a href="https://github.com/khushipatel04/Reminder-App.git"
+                                            target="_blank"
+                                            class="col-auto py-2 px-4 my-2 border border-2 border-white">
+                                            View Source
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="/reminder.apk"
+                                            target="_blank"
+                                            class="col-auto py-2 px-4 my-2 border border-2 border-white">
+                                            Try It Live
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="proj-info p-3">
+                                    <h3>Reminder-App</h3>
+                                    <div class="proj-category">
+                                        <h6>Android Application with Database</h6>
+                                    </div>
+                                    <div class="proj-lang">
+                                        <span>Java</span>
+                                        <span>XML</span>
+                                        <span>SQLite</span>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-9 col-sm-10 col-12 p-lg-4 p-2">
+                            <div class="proj-item visibility-hidden  animate" data-animate="fadeInRight"
+                                data-duration="1s" data-delay="0.2s" data-offset="100" data-iteration="1">
+                                <div class="proj-img">
+                                    <img src="/Images/ttt.jpeg" alt="">
+                                    <div class="proj-link row flex-column text-center">
+                                        <a href="https://github.com/khushipatel04/tic-tac-toe1.git"
+                                            target="_blank"
+                                            class="col-auto py-2 px-4 my-2 border border-2 border-white">
+                                            View Source
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-github">
+                                                <title>GitHub</title>
+                                                <path
+                                                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                                </path>
+                                            </svg>
+                                        </a>
+                                        <a href="/tic-tac-toe.apk"
+                                            target="_blank"
+                                            class="col-auto py-2 px-4 my-2 border border-2 border-white">
+                                            Try It Live
+                                            <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24"
+                                                fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="feather feather-external-link">
+                                                <title>External Link</title>
+                                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6">
+                                                </path>
+                                                <polyline points="15 3 21 3 21 9"></polyline>
+                                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="proj-info p-3">
+                                    <h3>Tic-Tac-Toe Game</h3>
+                                    <div class="proj-category">
+                                        <h6>Front End Android Application</h6>
+                                    </div>
+                                    <div class="proj-lang">
+                                        <span>Java</span>
+                                        <span>XML</span>
+                                       
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                 </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-------------- Contact page -------------->
+        <div class="bg-2">
+            <section id="contact" class="container-md">
+                <div class="contact-inner d-flex flex-column align-items-center m-auto">
+                    <div class="sketchy visibility-hidden animate" data-animate="bounceIn" data-duration="1s"
+                        data-delay="0.2s">Contact Me
+                    </div>
+                    <div class="contact-form mt-5 row justify-content-center visibility-hidden animate"
+                        data-animate="tada" data-duration="1s" data-delay="0.2s" data-offset="100" data-iteration="1">
+                        <div class="col-xl-4 col-lg-5 col-sm-10 contact-left ">
+                            <h1 class="fw-bolder mb-1">Let's get in touch</h1>
+                            <p>Feel free to Contact me by submitting the form below, my inbox is always open. Whether
+                                you have a question or just want to say hi, I’ll try my best to get back to you!</p>
+                                <div class="d-flex align-items-center m-2">
+                                    <div class="contact-icon col-auto">
+                                        <img src="/Images/phone.svg" alt="">
+                                    </div>
+                                    <div class="col"><span>Phone: </span>+91 63543 13355 </div>
+                                </div>
+                                <div class="d-flex align-items-center m-2">
+                                    <div class="contact-icon col-auto">
+                                        <img src="/Images/mail.svg" alt="">
+                                    </div>
+                                    <div class="col"><span>Email: </span>khushisunitapatel@gmail.com</div>
+                                </div>
+                                <div class="d-flex align-items-center m-2">
+                                    <div class="contact-icon col-auto">
+                                        <img src="/Images/github.svg" alt="" width="22">
+                                    </div>
+                                    <div class="col"><span>Website: </span><a
+                                            href="https://jaiminmalaviya.ml/"><u>jaiminmalaviya.ml</u></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <form name="contact" class="col-xl-4 col-lg-5 col-sm-10 contact-right" method="POST"
+                            data-netlify="true">
+                            <input class="w-100" type="text" name="name" placeholder="Name*">
+                            <input class="w-100" type="text" name="subject" placeholder="Subject*">
+                            <input class="w-100" type="email" name="email" placeholder="Mail*">
+                            <textarea class="w-100" name="message" rows="5" cols="30" placeholder="Message*"></textarea>
+                            <button class="btn float-start">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+        <!-------------- Footer -------------->
+        <footer class="main-footer">
+            <div class="container px-sm-5">
+                <div class="main-footer-upper row justify-content-between">
+                    <div class="col-md-auto order-md-1 mb-md-0 mb-5 ms-md-5 main-footer-row-1">
+                        <h2>Social</h2>
+                        <div class="main-footer-social-cont">
+                            <a target="_blank" rel="noreferrer" href="https://github.com/khushipatel04">
+                                <img src="/Images/s-github-w.svg" alt="JaiminMalaviya Github Profile"
+                                    class="main-footer-icon">
+                            </a>
+                            <a target="_blank" rel="noreferrer"
+                                href="www.linkedin.com/in/khushi-patel-6218441b3">
+                                <img src="/Images/s-linkedin-w.svg" alt="KhushiPatel linkedin Profile"
+                                    class="main-footer-icon">
+                            </a>
+
+                            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/khushipatel_0413/">
+                                <img src="/Images/s-instagram-w.svg" alt="KhushiPatel Instagram Profile"
+                                    class="main-footer-icon">
+                            </a>
+                            <a target="_blank" rel="noreferrer" href="https://wa.me/916354313355">
+                                <img src="/Images/s-whatsapp-w.svg" alt="KhushiPatel Whatsapp Messenger"
+                                    class="home-social-icon-static">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col order-md-0 main-footer-row-2">
+                        <h2>Khushi Patel</h2>
+                        <p>
+                            A Full stack focused Android Developer building the Frontend and Backend of Applications that leads to the success of the overall
+                            product
+                        </p>
+                    </div>
+                </div>
+
+                <!-- If you give me some credit or shoutout here by linking to my website, then it will be a big thing for me and will help me a lot :) -->
+                <div class="main-footer-lower">
+                    © Copyright
+                    <script>document.write(new Date().getFullYear())</script>. Made by
+                    <a rel="noreferrer" target="_blank" href="https://jaiminmalaviya.ml/">Khushi Patel</a>
+                </div>
+            </div>
+        </footer>
+
+    </main>
+
+
+    <!-------------- Bootstrap JS -------------->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+
+    <!-------------- Jquery JS -------------->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!-------------- Custom JS -------------->
+    <script src="/Javascript/script.js"></script>
+
+</body>
+
+</html>
