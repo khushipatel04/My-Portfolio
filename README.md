@@ -2,4 +2,4 @@
 Hey, It's My Portfolio websites.
 
 
-Link: 
+Link: https://khushipatel-portfolio.netlify.app/
